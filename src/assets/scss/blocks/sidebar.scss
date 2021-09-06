@@ -1,0 +1,18 @@
+.sidebar {
+    width: $sidebar-width;
+    height: 100vh;
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: $z-index-sidebar;
+
+
+
+
+}
+
+.sidebar__btn {
+
+    background-color: red;
+}
