@@ -9,6 +9,7 @@
     left: 0px;
     z-index: $z-index-sidebar;
     text-align: center;
+    
 }
 .sidebar__header{
     display: flex;
@@ -16,6 +17,7 @@
     justify-content: center;
     box-sizing: border-box;
     margin-bottom: 10px;
+    
     h3{
         font-size: 18px;
         font-weight: 400;
@@ -43,6 +45,8 @@
 .sidebar__header__img{ 
  width: 300px;
  height: 180px;
+ position: relative;
+ z-index: 0;
 }
 .sidebar__header__photo{
     width: 150px;
@@ -50,7 +54,10 @@
     border: 5px #eee solid;
     border-radius:100px;;
     overflow: hidden;
-    margin:0 auto 20px;
+    
+    margin:0 auto;
+    top:100px;
+
     img{
         object-fit: cover;
         width: 120px;
@@ -111,4 +118,3 @@
     
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
