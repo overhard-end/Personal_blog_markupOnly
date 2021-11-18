@@ -32,11 +32,8 @@
         "> 1%",
         "IE 10"
     ],
-
     "scripts": {
-          "gulp": "gulp"
-        }
-        
-      
+        "gulp": "gulp"
+    },
+    "dependencies": {}
 }
-

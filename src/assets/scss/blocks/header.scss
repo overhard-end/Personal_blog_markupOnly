@@ -34,21 +34,27 @@
 .header__nav__link:hover{
     background: #3137C9;
     transition: .2s;
+    
 }
 .droping:hover{
     background: #3137C9;
-    
+   
+    .header__svg{
+        transition: .3s;
+         transform: rotate(-180deg);
+    }
     .dropdown__links{
-        display: flex;
+        visibility: visible;
     }
 }
 .dropdown__links{
-    display: none;
+    visibility: hidden;
+    display: flex;
     position: absolute;
     flex-direction: column;
     background:#3137C9;
     a{
-        color: #eee;
+        color: #eee; 
         text-decoration: none;
         float: left;
         padding: 10px 45px 10px 10px;
@@ -76,9 +82,29 @@
         background: #202020;
         text-decoration: none;
         border: none;
-       
     }
-
 } 
+@media (max-width: 999px ) {
+    .header{
+        width: 100%;
+        justify-content: center;
+    }
+}
+@mixin breakpoint($br){
+    @media  (max-width:$br) {
+        @content
+        
+    }
+}
 
-   
+
+@media (max-width: 680px ){
+    .header{
+        justify-content: space-between;
+    }
+    .header__nav__link{
+        display: none;
+        
+    }
+    
+}

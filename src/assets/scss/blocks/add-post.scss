@@ -1,0 +1,33 @@
+.add-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:74px;
+    background-color: #121212;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.add-post__input{
+    background: #121212;
+    list-style: none;
+    border-style: none;
+    padding: 28px;
+    color: #eefe;
+}
+.add-post__btn-item{
+   display: inline;
+   margin-top: 10px;
+}
+.add-post__btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+}
+.add-post__btn-add-image{
+    background: #EBEBEB;
+}
+.add-post__btn-send{
+    background: blue;
+}
+

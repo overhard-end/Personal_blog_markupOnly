@@ -9,20 +9,21 @@
 
     <div class="page">
         {{> header }}
-
         {{>sidebar}}
-
+   
 
         <main class="main">
+            {{> stories }}
             <div class="container">
-                {{> body }}
+                {{>story-modal}}
             </div>
         </main>
     </div>
-
+ </div>
 
 
     <script src="assets/js/app.js"></script>
+				 
 </body>
 
 </html>

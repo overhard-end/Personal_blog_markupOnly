@@ -5,12 +5,17 @@
 
 html {
     font-size: 62.5%;
+   
 
 }
-
+*{
+    font-family: "Roboto";
+}
 body {
+    overflow-x: hidden;
+    margin:0 auto;
     background-color: #181818;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Roboto";
     font-size: 1.4rem;
     color: $white;
 
@@ -30,3 +35,15 @@ body {
 @import"blocks/main";
 @import"blocks/container";
 @import"blocks/page";
+@import"blocks/add-post";
+@import"blocks/post";
+@import"blocks/page-nav";
+@import"blocks/stories";
+@import"blocks/burger-menu";
+@import"blocks/text-page";
+@import"blocks/story-modal";
+
+
+
+
+

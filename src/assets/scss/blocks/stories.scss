@@ -1,23 +1,36 @@
 .stories__items__areya{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin:0 auto;
+    width: 100%;
+    
+    @include breakpoint($mob){
+        overflow-x: scroll;
+        margin: 0;
+        
+    }
+    
 }
+
 .stories__item{
+    flex-shrink: 0;
     width: 140px;
     height: 200px;
     overflow: hidden;
-    display: block;
     border-radius: 10px;
     position: relative;
+    margin: 5px;
     padding: 15px;
     margin-bottom: 20px;
     cursor: pointer;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 1px;
-   
+   @include breakpoint($mob){
+
+   }
 }
 .stories__item:after {
      content: ''; 

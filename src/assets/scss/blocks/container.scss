@@ -1,8 +1,14 @@
 .container {
-    max-width: 70rem;
-    margin: 0 auto;
+   margin: auto;
+    max-width: 700px;
+    overflow-x: hidden;
+  
     padding-left: 5rem;
     padding-right: 5rem;
 
-
+}
+@media (max-width:680px) {
+    .container{
+        padding: 0 5px;
+    }
 }

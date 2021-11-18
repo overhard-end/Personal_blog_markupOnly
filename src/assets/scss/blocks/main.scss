@@ -2,4 +2,8 @@
     padding-top: 10rem;
     padding-left: $sidebar-width;
 }
-@import"stories";
+@media (max-width: 999px ) {
+    .main{
+        padding-left: 0;
+    }
+}
