@@ -28,9 +28,8 @@ let elements = [...document.querySelectorAll('#click')].forEach(item => {
   let modalWindow = document.querySelector(".modal-container");
   let body = document.querySelector("body");
   body.addEventListener("click",()=>{
+      let stor =document.querySelector(".stories__item")
       modalWindow.classList.remove("modal-container")
       document.querySelector(".story-modal").classList.add("story-modal--hidden")
-
-
   })
   
