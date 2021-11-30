@@ -1,0 +1,41 @@
+.auth{
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    margin-top: 30%;
+}
+.auth__container{
+    width: 280px;
+    text-align: center;
+}
+.auth__title {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+.auth-form {
+   
+}
+.auth__input{
+    width: 100%;
+}
+
+.profile-btn--login {
+    margin-bottom: 25px;
+    
+}
+.auth-footer {
+   display: flex;
+   justify-content:center;
+    
+}
+.auth-link{
+    margin-right: 10px;
+    color: #ffff;
+    text-decoration: none;
+    &:hover{
+        transition: 2s;
+        text-decoration: underline;
+    }
+}

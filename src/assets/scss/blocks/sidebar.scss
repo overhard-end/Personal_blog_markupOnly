@@ -84,10 +84,8 @@
     }
 }
 .sadibar__main--buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    margin-top: 20px;
+   
     button{
         font-family: "Roboto";
         font-size: 12px;
@@ -98,7 +96,8 @@
         max-height: 60px;
         padding: 10px 15px;
         border-style: none;
-        border-radius: 20px
+        border-radius: 20px;
+        margin-right: 10px;
     }
     button:hover{
         box-shadow:  0 0 15px 0px black;
@@ -106,6 +105,7 @@
     }
     .red{
         background:#ED3024;
+        
     }
     .blue{
         background:#2A5FE7;

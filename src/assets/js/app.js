@@ -1,13 +1,20 @@
 
 let menu_body = document.getElementById("bur");
+menu_body.addEventListener("click", (e)=>{
+    let ClickPosOnMenu = e.target.getBoundingClientRect();
+if(ClickPosOnMenu.x === 0){
+    console.log(ClickPosOnMenu.x)
+}
+else {
+    console.log("else")
+}
+})
 document.querySelector(".burger-menu").addEventListener('click',()=>{
     
     if(menu_body.classList.value === "burger-menu--v" ){
-        menu_body.classList.toggle("burger-menu--v");
-        menu_body.classList.add("burger-menu--h")
+        menu_body.classList = "burger-menu--h"
     }else{
-        menu_body.classList.remove("burger-menu--h");
-        menu_body.classList.add("burger-menu--v");
+        menu_body.classList ="burger-menu--v";
     };
 });
 
@@ -25,11 +32,43 @@ let elements = [...document.querySelectorAll('#click')].forEach(item => {
       });
   });
 
-  let modalWindow = document.querySelector(".modal-container");
-  let body = document.querySelector("body");
-  body.addEventListener("click",()=>{
-      let stor =document.querySelector(".stories__item")
-      modalWindow.classList.remove("modal-container")
-      document.querySelector(".story-modal").classList.add("story-modal--hidden")
+  let modalContainer = document.getElementById("modal-container");
+  let contactModal = document.querySelector(".contact-modal");
+  let modalStory = document.querySelector(".story-modal")
+  
+  
+  
+
+  modalContainer.addEventListener("click",(event)=>{
+     let clickPosition = event.target.getBoundingClientRect()
+     if(clickPosition.x === 0){
+         modalContainer.classList = "modal-container--hidden";
+         contactModal.classList ="contact-modal--hidden"
+         modalStory.classList ="story-modal--hidden"
+     }
+  });
+
+  let closeBtnContact =document.querySelector(".back-btn");
+  closeBtnContact.addEventListener("click", ()=>{
+    modalContainer.classList = "modal-container--hidden"
+    contactModal.classList ="contact-modal--hidden"
+  });
+
+  let contactMeBtn =document.querySelector(".contact-me")
+  contactMeBtn.addEventListener("click", ()=>{
+    modalContainer.classList = "modal-container";
+    contactModal.classList ="contact-modal"
+
+  });
+  
+  let stor = [...document.querySelectorAll(".stories__item")].forEach(item =>{
+      
+      item.addEventListener("click",() =>{
+        modalContainer.classList = "modal-container";
+        modalStory.classList ="story-modal--hidden"
+        modalStory.classList ="story-modal"
+
+      })
   })
+  
   

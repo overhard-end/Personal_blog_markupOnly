@@ -1,0 +1,56 @@
+.profile {
+    
+}
+.profile__title {
+    font-size: 21px;
+    margin-bottom: 60px;
+}
+.profile__arey {
+    display: flex;
+    flex-direction: row;
+}
+.profile__form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin-right: 110px;
+}
+.input {
+    color: #ffffff;
+    border:none;
+    background:none;
+    outline:none;
+    padding:0;
+    margin-bottom: 25px;
+    padding-bottom: 9px;
+    border-bottom: 1px #3F3F3F solid;
+    &:focus{
+        border-bottom: 1px #107EFF solid;
+    }
+}
+.profile__input-name {
+}
+.profile__input-email {
+}
+.profile__input-new-password {
+}
+.profile__input-conf-password {
+}
+.profile__item {
+}
+.profile__avatar {
+}
+.profile__input-img-link {
+    border:none;
+    background:none;
+    outline:none;
+    padding:0;
+}
+.profile-btn{
+    width: 90px;
+    height: 30px;
+    background: #3137C9;
+    border-radius: 5px;
+    color: #ffff;
+    border: none;
+}

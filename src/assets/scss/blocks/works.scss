@@ -1,0 +1,63 @@
+
+.works__title {
+    font-size: 21px;
+    padding-bottom: 30px;
+}
+.works-item {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0px 30px 2px black ;
+    margin-bottom: 50px;
+}
+.works-item__right-item {
+    background: #202020;
+    padding:  25px ;
+    position: relative;
+}
+.right-item__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.right-item__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #D2D2D2;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+.right-item__tags {
+   display: inline-flex;
+}
+.work-tag {
+    font-family: "Roboto";
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px  10px;
+    height: 21px;
+    background: #EA8C1E;
+    border-radius: 3px ;
+}
+.right-item__btn-item {
+    position:absolute;
+    bottom: 0;
+    padding-bottom: 14px;
+    right: 0;
+    
+}
+.go-site-btn {
+    margin-right: 34px;
+    width: 128px;
+    height: 30px;
+    background: #3137C9;
+    border-style: none;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 5px;
+    &:active{
+        background: #3136c9c0 ;
+    }
+}
